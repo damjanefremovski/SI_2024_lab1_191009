@@ -1,0 +1,50 @@
+1. Инсталиран GitHub Desktop и поврзан со мојот профил
+2. Во полето Repository default branch сменето името на новите гранки од main во master
+3. Креиран приватен репозиториум со име SI_2024_lab1_191009
+4. mkdir SI_2024_lab1_191009
+cd SI_2024_lab1_191009
+git init
+Initialized empty Git repository in ../SI_2024_lab1_191009/.git/
+5. git remote add origin https://github.com/damjanefremovski/SI_2024_lab1_191009.git и со командата git remove -v проверив дали се поврзани
+6. Користејќи notepad креирав README.md file и ги запишав бараните информации. Потоа со следните команди го додадов во репозиториумот:
+git add README.md
+git commit -m "Initial commit"
+7. Ги превземав фајловите од трите линка и ги зачував во директориумот кој што го креирав. Потоа со следните команди ги додадов во репозиториумот:
+git add SILab1Main.java SILab1_1.java SILab1_2.java ; Добив warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it за сите три фајла
+git commit -m "Add starter code"
+8. git push -u origin master , ми побара автентикација со пребарувачот и по одобрение успешно се направи push
+9. git checkout master - за да сум сигурен дека сум на master гранката
+git checkout -b bug1
+git checkout master
+git checkout -b bug2
+10. git checkout bug1
+11. Ја поправив грешката во SILab1_1.java и потоа ги искористив следните команди:
+git add SILab1_1.java 
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. git checkout bug2
+13. Ја поправив грешката во SILab1_2.java и потоа ги искористив следните команди:
+git add SILab1_2.java 
+git commit -m "Fix wrong condition in makeBigStringFrom"
+14. git checkout bug1
+15. Ја направив промената во SILab1Main.java и потоа ги искористив следните команди:
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+16. git checkout bug2
+17. Ја направив промената во SILab1Main.java и потоа ги искористив следните команди:
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom in main class"
+18. git push --all origin
+19. git checkout master
+20. git merge bug 1 (Fast-Forward)
+21. git push --all origin
+22. git checkout bug2
+23. git rebase master (Conflict), Го скокам конфликтот и одам до master гранката со следната команда:
+git rebase --skip
+24. git checkout master
+25. git merge bug2
+26. git push --all origin (Се јавува проблем про додавање на bug2, затоа во наредниот чекор користиме --force)
+27. git push --all --force origin
+28. Креирам фајл logs.txt и ги копирам логовите кои ги добивам со командата git logs. Потоа ги додавам побарани датотеки со командата:
+git add logs.txt 191009.txt
+git commit -m "Final commit"
+29. git push --all origin

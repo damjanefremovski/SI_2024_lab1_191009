@@ -1,0 +1,29 @@
+commit 53c3c3db283a865c82b6e3cb4832a71c33b6b7b1 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Damjan Efremovski <efremovskidamjan@gmail.com>
+Date:   Fri Apr 12 23:47:16 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 9c1bac34fa94924350a28420cd9f5880e9b7652a (origin/bug1, bug1)
+Author: Damjan Efremovski <efremovskidamjan@gmail.com>
+Date:   Fri Apr 12 23:50:26 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 86bddbd3945f4eeba2af2f1eec401c500ca72b9d
+Author: Damjan Efremovski <efremovskidamjan@gmail.com>
+Date:   Fri Apr 12 23:43:18 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 527a86fdf195e4a1ce7f804401c12e95ef33384f
+Author: Damjan Efremovski <efremovskidamjan@gmail.com>
+Date:   Fri Apr 12 23:20:03 2024 +0200
+
+    Add starter code
+
+commit a61ebc31b65be7366a3367e0c27c6369be9c320f
+Author: Damjan Efremovski <efremovskidamjan@gmail.com>
+Date:   Fri Apr 12 23:15:11 2024 +0200
+
+    Initial commit
